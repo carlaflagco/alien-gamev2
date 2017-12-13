@@ -4,6 +4,7 @@ import { connect} from 'react-redux';
 import * as actions from '../../Actions/story_actions';
 import EnemyCard from './EnemyCard'; 
 import PlayerCard from './PlayerCard'; 
+import Intructions  from './Instructions'; 
 import Typing from 'react-typing-animation'; 
 import { Container, 
     Row, 
@@ -32,11 +33,13 @@ class Game extends Component{
                 <div className = "game-wrapper">
                     <Container>
                         <Row className = "row1 d-flex flex-row">
-                            <Col md="4">
-                                <div className = "instructions text-light">instructions</div>
+                            <Col md="2">
+                                <div className = "instructions text-light">
+                                    <Intructions />
+                                </div>
                             </Col>
 
-                            <Col md = "3">
+                            <Col md = "5">
                                 <div className = "timer">timer</div>
                             </Col>
                         </Row>
@@ -73,7 +76,6 @@ class Game extends Component{
                                     <div className = "p-5 text-dark card">card3</div>
                                     <div className = "p-5 text-dark card">card4</div>
                                     <div className = "p-5 text-dark card">card5</div>
-                                    <div className = "p-5 text-dark card">card6</div>
                                 </div>
                             </Col>
                             
@@ -92,7 +94,6 @@ class Game extends Component{
                                     <div className = "p-5 text-dark card">card3</div>
                                     <div className = "p-5 text-dark card">card4</div>
                                     <div className = "p-5 text-dark card">card5</div>
-                                    <div className = "p-5 text-dark card">card6</div>
                                 </div>
                                 <Button>Shuffle</Button>
                                 <div className = "companions float-right d-flex flex-column">
@@ -124,6 +125,15 @@ class Game extends Component{
                             </div>
                         </Row>
                     </Container>
+                </div>
+                <div className = "p-2 audio">
+                    <embed 
+                        src="assets/music/time-rush.mp3" 
+                        preload = "auto" 
+                        width="10"
+                        height="10"
+                        loop="true"
+                    controls/>	
                 </div>
             </div>  
         )

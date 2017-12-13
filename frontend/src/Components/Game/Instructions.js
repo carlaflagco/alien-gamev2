@@ -3,19 +3,12 @@ import {Link} from 'react-router-dom';
 import { connect} from 'react-redux';
 import * as actions from '../../Actions/story_actions';
 import Typing from 'react-typing-animation'; 
-import { Container, 
-    Row, 
-    Col,
+import {
     Button, 
-    Card, 
-    CardBlock, 
-    CardText, 
-    CardImg, 
-    CardImgOverlay 
 } from 'reactstrap';
 
 
-class Game extends Component{
+class Intructions extends Component{
     constructor(props){
         super(props);
             this.state = {
@@ -24,15 +17,12 @@ class Game extends Component{
 
     render(){
         return(
-            <div>
-                <div className = "game-wrapper">
-                    <Container>
-                    </Container>
-                </div>
-            </div>
+            <Button>
+                Instructions
+            </Button>
         )
     }
               
 }
 
-export default EnemyCard; 
+export default Intructions ; 

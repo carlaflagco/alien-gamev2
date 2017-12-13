@@ -22,17 +22,18 @@
     }
 
     .row1{
-        border: 3px solid green; 
+        border: 3px solid yellow; 
         height: 6em; 
-        margin-top:9em; 
+        margin-top:9em;
+
+        //INSTRUCTIONS
         .instructions{
-            background-color:black;
-            border: 2px solid red;
             height: 5em;   
         }
 
+        //TIMER 
+
         .timer{
-            background-color:black;
             border: 2px solid red;
             height: 5em; 
             margin-left:11em; 
@@ -87,11 +88,14 @@
     .row3{
         border: 3px solid orange; 
         height: 20em; 
+
+
+        //ENEMY DECK
         .enemy-deck{
             background-color:black;
             border: 2px solid red;
-            height: 9em; 
-            margin-left: -1.7em;
+            height: 10em; 
+            margin-left: 0.3em;
         }
 
         .attack-screen{
@@ -116,19 +120,24 @@
             }
 
         }
-       
+       //PLAYER DECK
         .player-deck{
             background-color:black;
             border: 2px solid red;
-            height: 9em; 
-            margin-left: -1em;
+            height: 10em; 
+            margin-left: 1em;
         }
+
+        //COMPANIONS
+
         .companions{
             background-color:black;
             border: 2px solid red;
             height: 30em; 
             width: 10em; 
-            margin-top: 1em; 
+            margin-top: -21em; 
+            margin-right: -12em; 
+
             .p-2{
                 background: yellow; 
                 height: 10em; 
@@ -159,3 +168,42 @@
         
     }
 }
+
+
+// // BUTTONS
+
+// a.round-button {
+//     display: inline-block;
+//     background-color: #FC5976;
+//     text-align: center;
+//     width: 2.5em;
+//     height: 2.5em;
+//     padding: 2.4em 2.5em;
+//     text-decoration: none;
+//     color: #fff;
+//     font-family: muli, sans-serif;
+//     font-weight: 800;
+//     border-radius: 6em;
+//     font-size: 2em;
+//     border-bottom: 0.5em solid #D92E4E;
+//     position: relative;
+//     line-height: 1.2;
+//   }
+  
+//   a.round-button:hover, a.round-button:active {
+//     border-bottom: 0.3125em solid #D92E4E;
+//     top: 0.125em;
+//   }
+  
+//   a.round-button:before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     width: calc(100% - 1.5em);
+//     height: calc(100% - 1.5em);
+//     border: 5px dashed #fff;
+//     border-radius: 50%;
+//     left: 0.6125em;
+//     top: 0.6125em;
+//     pointer-events: none;
+//   }
